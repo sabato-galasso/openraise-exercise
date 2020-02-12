@@ -1,0 +1,28 @@
+<div *ngIf="feature" class="m-3">
+  <h3>{{feature.title}}</h3>
+  <p>Quota minima per inizio sviluppo: <b>{{bufferValue}} €</b></p>
+  <div [style.margin-left]="value+'%'">
+    <div>{{value}} %</div>
+  </div>
+  <section class="section">
+    <mat-progress-bar
+      class="example-margin"
+      [color]="color"
+      [mode]="mode"
+      [value]="value"
+      [bufferValue]="bufferValue">
+    </mat-progress-bar>
+  </section>
+  <div class="d-flex justify-content-between">
+    <div>
+      <mat-icon>access_time</mat-icon>
+      <span class="aligned-with-icon">{{expirationDate }} giorni</span></div>
+    <div class="d-flex align-items-center">
+      <span> Quota raggiunta
+        <b> {{amount}} su {{bufferValue}} €</b>
+</span>
+    </div>
+  </div>
+</div>
+
+<mat-divider class="position-relative"></mat-divider>

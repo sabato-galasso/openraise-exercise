@@ -1,0 +1,7 @@
+{
+  "/*": {
+    "target": "https://elasticsearch.developers.italia.it",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}
